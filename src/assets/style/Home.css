@@ -1,0 +1,33 @@
+.information {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    margin: 4% 0;
+    align-items: center;
+    gap: 2%;
+}
+
+.titleName{
+   font-size: 3.8rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    padding: 0 0  1.5rem;
+    
+}
+
+.descriptionSkill{
+    font-size: 1.7rem;  font-weight: 100;
+    opacity: 1;
+    /* color: rgba(75,85,99,var(--tw-text-opacity));
+   
+     --tw-text-opacity: 1; */
+     color: #4B5563;
+    font-family: 'Tangerine', serif;
+}
+
+.imagePerfil{
+max-width: 75%;
+}
+.imagePerfil img{
+    width: 100%;
+    border-radius: 99%;
+}
