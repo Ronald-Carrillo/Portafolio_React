@@ -12,19 +12,16 @@ const Header = () => {
             </div>
                 <div className='nav'>
                     <div className='home'>
-                        <div>Home</div>
+                        <a>Home</a>
                     </div>
                     <div className='aboutMe'>
-                        <div>Acerca de mi </div>
-                    </div>
-                    <div className='services'>
-                        <div>Servicios</div>
+                        <a>Sobre mi </a>
                     </div>
                     <div className='portfolio'>
-                        <div>Portafolio</div>
+                        <a>Portafolio</a>
                     </div>
                     <div className='contact'>
-                        <div>Contactame</div>
+                        <a>Contactame</a>
                     </div>
                 </div>
         </header>

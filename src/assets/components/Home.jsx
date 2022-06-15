@@ -1,5 +1,8 @@
 import React from 'react'
-import logo from "../image/twiter.png"
+import Twitter from "../image/twitter.png"
+import linkedin from "../image/linkedin.png"
+import github from "../image/github.jpg"
+import facebook from "../image/facebook.jpg"
 import perfil from "../image/perfil.jpg"
 import "../style/Home.css"
 
@@ -8,22 +11,26 @@ import "../style/Home.css"
 const Home = () => {
     const socialMedia = [
         {
-          media: "twitter",
-          image:logo
+          media: "Twitter",
+          image:Twitter
         },
         {
-          media: "twitter",
-          image:logo
+          media: "Linkedin",
+          image:linkedin
         },
         {
-          media: "twitter",
-          image:logo
-        }
+          media: "GitHub",
+          image:github
+        },
+        {
+          media: "Facebook",
+          image:facebook
+        },
     ]
   return (
     <div>
         <div className='information'>
-                <div>
+                <div className='containerInformation'>
                     <div className="titleName">Ronald Carrillo Parra</div>
                     <div className="descriptionSkill">Mechatronic Engineer | Web developer | front-end developer</div>
                 </div>
@@ -31,18 +38,20 @@ const Home = () => {
                     <img src={perfil} alt="" />
                 </div>
         </div>
-        {/* {socialMedia.map(d =>
-            <div className='containerIcons'>
-                <div className="iconItem">
-                    <figure>
-                        <img src={d.image} alt="" />
-                    </figure>
+        <div className='containerMedia'>
+            {socialMedia.map((d, index)=>
+                <div className='containerIcons' key={index}>
+                    <div className="iconItem">
+                        <figure>
+                            <img src={d.image} alt="" />
+                        </figure>
                 </div>
-                <div className="media">
-                    <h2>{d.media}</h2>
-                </div>
-            </div> 
-        )} */}
+                    <div className="media">
+                        <h2>{d.media}</h2>
+                    </div>
+                  </div>
+            )}
+        </div>
     </div>
     
   )

@@ -1,9 +1,9 @@
 .information {
     display: grid;
     grid-template-columns: 70% 1fr;
-    margin: 4% 0;
+    margin: 4% 0 0;
     align-items: center;
-    gap: 2%;
+    gap: 6%;
 }
 
 .titleName{
@@ -25,9 +25,86 @@
 }
 
 .imagePerfil{
-max-width: 75%;
-}
+    max-width: 75%;
+    }
 .imagePerfil img{
     width: 100%;
     border-radius: 99%;
+}
+
+.containerIcons {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    width: 100%;
+    align-items: center;
+}
+
+.containerMedia{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+width: 74%;
+}
+.iconItem figure{
+margin: 0;
+}
+.iconItem img{
+width: 76%;
+border-radius: 4px;
+}
+
+.media h2{
+    font-weight: 400;
+}
+
+@media (max-width: 1010px) {
+    .imagePerfil{
+        display: none;
+    }
+    .information {
+        display: flex;
+        margin: 7% 0 4%;
+        /* display: grid;
+        grid-template-columns:  1fr; */
+    }
+}
+@media (max-width: 852px) {
+    .titleName{
+        font-size: 3.5rem;
+}
+}
+@media (max-width: 787px) {
+    .titleName{
+        font-size: 3.1rem;
+        
+    }
+    .containerMedia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px 0;
+        width: 100%;
+    }
+    .media h2{
+        font-weight: 400;
+        font-size: 16px ;
+    }
+    .containerIcons{
+        grid-template-columns: 30% 1fr;
+        margin: 20px;
+
+    }
+    .iconItem img {
+    width: 69%;
+    }
+    .ContainerAboutMe{
+        margin: 65px 0;
+    }
+}
+@media (max-width: 558px) {
+    .titleName{
+        font-size: 2.6rem;
+    }
+    .information{
+        align-items: center;
+        justify-content: center;
+    }
 }
