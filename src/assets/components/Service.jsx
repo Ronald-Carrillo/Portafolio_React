@@ -29,7 +29,7 @@ const Service = () => {
               {Services.map((d)=>
                 <div className="box">
                     <div className="inner">
-                        <div className="icon">
+                        <div className="iconService">
                                 <img  style={{width: "20%", color: "blue" }} src={d.image} alt="" />
                             </div>
                         <h3>{d.title}</h3>

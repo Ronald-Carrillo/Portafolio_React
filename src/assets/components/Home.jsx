@@ -12,19 +12,23 @@ const Home = () => {
     const socialMedia = [
         {
           media: "Twitter",
-          image:Twitter
+          image:Twitter,
+          url:"https://twitter.com/ronaldc82890728"
         },
         {
           media: "Linkedin",
-          image:linkedin
+          image:linkedin,
+          url:"https://www.linkedin.com/in/ronald-carrillo/"
         },
         {
           media: "GitHub",
-          image:github
+          image:github,
+          url:"https://github.com/Ronald-Carrillo"
         },
         {
           media: "Facebook",
-          image:facebook
+          image:facebook,
+          url:"https://www.facebook.com/ronald.carrilloaz/"
         },
     ]
   return (
@@ -40,12 +44,12 @@ const Home = () => {
         </div>
         <div className='containerMedia'>
             {socialMedia.map((d, index)=>
-                <div className='containerIcons' key={index}>
-                    <div className="iconItem">
+                <div  className='containerIcons' key={index}>
+                    <a href={d.url} className="iconItem">
                         <figure>
                             <img src={d.image} alt="" />
                         </figure>
-                </div>
+                </a>
                     <div className="media">
                         <h2>{d.media}</h2>
                     </div>
