@@ -1,4 +1,5 @@
 import React from 'react'
+// import { BrowserRouter as Router,  Switch, Route } from 'react-router-dom';
 import Header from "../src/assets/components/Header";
 import Home from "../src/assets/components/Home";
 import "../src/App.css"
@@ -8,17 +9,14 @@ import Contactme from './assets/components/Contactme';
 
 
 function App() {
-
-  const id = () =>{
     
-  }
   return (
     <div className="App">
-      <Header></Header>
-      <Home></Home>
-      <AboutMe></AboutMe>
-      <Portfolio></Portfolio>
-      <Contactme></Contactme>
+          <Header></Header>
+            <Home></Home>
+            <AboutMe></AboutMe>
+            <Portfolio></Portfolio>
+            <Contactme></Contactme>
     </div>
   );
 }

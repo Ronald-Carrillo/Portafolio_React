@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                     <div className='nav'>
                         <div className='home'>
-                            <a href="`#${id.seccion}`">Home</a>
+                            <a href="`#home">Home</a>
                         </div>
                         <div className='aboutMe'>
                             <a href='#about_me'>Sobre mi </a>
