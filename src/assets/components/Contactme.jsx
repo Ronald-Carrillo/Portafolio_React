@@ -3,7 +3,7 @@ import "../style/Contactme.css"
 
 const Contactme = () => {
   return (
-    <div className='ContainerCatactme'>
+    <div className='ContainerCatactme' id='contact' >
         <div className='InformationContact'>
             <h1>Contacta me</h1>
             <div>Soy desarrollador web y servicios de desarrollo

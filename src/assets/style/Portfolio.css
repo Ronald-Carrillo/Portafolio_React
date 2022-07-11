@@ -98,13 +98,15 @@ height: 100%;
     margin-right: 0.5em;
 }
 
-.cssbuttons-io span {
+.cssbuttons-io a{
     position: relative;
     z-index: 10;
     transition: color 0.4s;
     display: inline-flex;
     align-items: center;
     padding: 0.8em 1.2em 0.8em 1.05em;
+    color: white;
+    text-decoration: none;
 }
 
 .cssbuttons-io::before,

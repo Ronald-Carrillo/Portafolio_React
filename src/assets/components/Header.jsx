@@ -16,25 +16,25 @@ const Header = () => {
                     </div>
                     <div className='nav'>
                         <div className='home'>
-                            <link spy={true} to="home" activeClass="activeClass" smooth={true} >
-                            <a>Home</a>
-                            </link>
+                            <Link spy={true} to="home" activeClass="activeClass" smooth={true} >
+                            <li>Home</li>
+                            </Link>
                         </div>
-                        <link spy={true} to="sobre_mi" activeClass="activeClass" smooth={true} >
+                        <Link spy={true} to="sobre_mi"  smooth={true} >
                             <div className='aboutMe'>
-                                <a>Sobre mi </a>
+                                <li>Sobre mi </li>
                             </div>
-                        </link>
-                        <link spy={true} to="portfolio"  smooth={true} >
+                        </Link>
+                        <Link spy={true} to="portfolio"  smooth={true} >
                             <div className='portfolio'>
-                                <a>Portafolio</a>
+                                <li>Portafolio</li>
                             </div>
-                        </link>
-                        <link spy={true} to="contact"  smooth={true} >
+                        </Link>
+                        <Link spy={true} to="contact"  smooth={true} >
                             <div className='contact'>
-                                <a>Contactame</a>
+                                <li>Contactame</li>
                             </div>
-                        </link>
+                        </Link>
                     </div>
             </header>
             
