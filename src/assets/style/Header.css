@@ -34,18 +34,6 @@ border-radius: 12px;
     display:none;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
-  opacity: 0.75;
-}
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
-}
 
 @media (max-width: 932px) {
     .nav{
@@ -107,7 +95,7 @@ border-radius: 12px;
     font-size: 49px;
     margin: 3% 7% 8%;
 }
-.navResponsive{
+ .navResponsive{
     grid-column-start: -3;
     grid-column-end: -1;
     width: 100%;

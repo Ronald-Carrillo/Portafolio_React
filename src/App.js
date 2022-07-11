@@ -9,9 +9,7 @@ import Contactme from './assets/components/Contactme';
 
 function App() {
 
-  const id = () =>{
-    
-  }
+
   return (
     <div className="App">
       <Header></Header>
