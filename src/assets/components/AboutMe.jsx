@@ -10,7 +10,7 @@ import  Service  from './Service'
 const AboutMe = () => {
     const [AboutMenu, setAboutMenu] = useState("Perfil")
   return (
-    <div className='ContainerAboutMe'>
+    <div className='ContainerAboutMe' id='sobre_mi'>
         <div className='AboutImage'>
             <img src={image} alt="" />
         </div>
